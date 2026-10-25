@@ -1,0 +1,9 @@
+node_modules
+.tmp
+.edge*
+*.local
+shots
+
+# dist 下只提交可双击运行的单文件产物，构建中间产物不入库
+dist/assets/
+dist/index.html

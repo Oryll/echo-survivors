@@ -1,0 +1,27 @@
+{
+  "name": "echo-survivors",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 5200 --strictPort",
+    "build": "tsc --noEmit && vite build && node scripts/inline.mjs",
+    "preview": "vite preview --host 127.0.0.1 --port 5201 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "sim": "node scripts/run-sim.mjs all 3",
+    "playtest": "node scripts/play-live.mjs 200000",
+    "verify": "node scripts/verify-meta.mjs"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "typescript": "^5.7.2",
+    "vite": "^5.4.11",
+    "esbuild": "^0.21.5"
+  }
+}
